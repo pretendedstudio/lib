@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="robots" content="index, follow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Jekyll v4.2.1" />
 <title>{% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} - {% endif %}{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif %}{{ site.name | escape }}</title>
 <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
 <meta property="og:locale" content="en_US">
@@ -12,24 +11,22 @@
 <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
-<meta property="og:site_name" content="Free 3D Models">
+<meta property="og:site_name" content="CG 3D">
 <meta property="article:publisher" content="http://www.facebook.com/pretendedstudio" />
 <meta property="article:author" content="https://www.facebook.com/pretendedstudio" />
 <meta property="article:published_time" content="{{ page.date }}" />
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <link rel="canonical" href="{{ page.url | prepend: site.url }}">
-<meta name="p:domain_verify" content="e093ed2011453a860170d69cfa3654df"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/bootstrap.min.css">
 </head>
 <body>
 <header class="topnav" id="myTopnav">
-  <a href="https://free3dmodels.xyz" class="active">{{site.name}}<!--b style="font-size: 10px; color: #fff; background: #666; border-radius: 3px;padding: 1px 2px;">v1.2</b--></a>
+  <a href="https://cg3d.org" class="active">{{site.name}}<!--b style="font-size: 10px; color: #fff; background: #666; border-radius: 3px;padding: 1px 2px;">v1.2</b--></a>
   <div class="header-right">
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-  <!--a href="/game-assets">Game Assets</a-->
   <a href="/support">Support</a>
   <a href="/categories">Categories</a>
   <a href="/license">License</a>
@@ -46,16 +43,8 @@
 {{ content }}
 
 <footer style="text-align: center; padding: 16px;">
-<!-- Social footer -->
-<!--a target="_blank" href="https://facebook.com/publicdomainmodels"><i class="fab fa-facebook-f" style="color: #666;"></i></a>
-<a target="_blank" href="https://github.com/publicdomainmodels"><i class="fab fa-github" style="color: #555;"></i></a>
-<a target="_blank" href="https://patreon.com/publicdomainmodels"><i class="fab fa-patreon" style="color: #666;"></i></a>
-<a target="_blank" href="https://instagram.com/publicdomainmodels"><i class="fab fa-instagram" style="color: #666;"></i></a>
-<a target="_blank" href="https://pinterest.com/publicdomainmodels"><i class="fab fa-pinterest" style="color: #666;"></i></a>
-<a target="_blank" href="https://linkedin.com/in/publicdomainmodels"><i class="fab fa-linkedin" style="color: #666;"></i></a-->
-<br/>
 <!-- Footer credit -->
-<span id="pdm" style="color: #666;"></span> &middot; <a style="color: #666;" href="https://free3dmodels.xyz">Free 3D Models</a>
+<span id="pdm" style="color: #666;"></span> &middot; <a style="color: #666;" href="https://cg3d.org">Free 3D Models</a>
 <script>
 document.getElementById("pdm").innerHTML = new Date().getFullYear();
 </script>
@@ -75,6 +64,5 @@ var mybutton = document.getElementById("myBtn");window.onscroll = function() {sc
 <script>
 window.addEventListener("load", function(){window.cookieconsent.initialise({"cookie": { "expiryDays": 730 },"palette": {"popup": { "background": "#212327" },"button": { "background": "#007bff" }},"theme": "classic"});});
 </script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "923e7211471247c3b2d25ff888c4db82"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
