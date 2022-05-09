@@ -1,7 +1,7 @@
-name: 'Free 3D Models'
-description: 'Public Domain Assets'
-author: 'Mohamad Rido'
-email: 'cc03ds@mail.ru'
+name: 'CG 3D'
+description: 'Public Domain 3D Assets'
+author: 'Pretended Studio'
+email: 'pretendedstudio@mail.ru'
 permalink: /:title
 plugin:
   - jekyll-feed
