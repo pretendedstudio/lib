@@ -126,6 +126,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .card {
   border-radius: 6px;
   box-shadow: 0 1px 2px 0 #999;
+  -ms-box-shadow: 0 1px 2px 0 #999;
+  -mox-box-shadow: 0 1px 2px 0 #999;
+  -webkit-box-shadow: 0 1px 2px 0 #999;
   text-align: center;
   background-color: #fff;
 }
@@ -133,6 +136,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .card:hover {
   border-radius: 6px;
   box-shadow: 0 1px 2px 0 #555;
+  -ms-box-shadow: 0 1px 2px 0 #555;
+  -mox-box-shadow: 0 1px 2px 0 #555;
+  -webkit-box-shadow: 0 1px 2px 0 #555;
   text-align: center;
   background-color: #fff;
 }
