@@ -2,7 +2,6 @@
 layout: default
 title: Models
 ---
-<h1 class="content-listing-header sans">Posts</h1>
 <div class="row">
 {% for post in site.posts %}
   <div class="column">
@@ -16,8 +15,3 @@ title: Models
   </div>
 {% endfor %}
 </div>
-<br/>
-{% assign random = site.time | date: "%s%N" | modulo: site.posts.size %}
-<h1>{{ site.posts[random].title }}</h1>
-<h1>{{ site.posts[random].title }}</h1>
-<h1>{{ site.posts[random].title }}</h1>
