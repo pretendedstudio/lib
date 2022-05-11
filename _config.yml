@@ -8,6 +8,7 @@ plugin:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-category-pages
 markdown: kramdown
 highlighter: rouge
 paginate: 15
