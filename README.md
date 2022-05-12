@@ -1,2 +1,2 @@
-# 3dmodels
-Public Domain Models
+# lib
+Assets Library
