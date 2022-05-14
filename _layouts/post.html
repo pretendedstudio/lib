@@ -1,31 +1,6 @@
 ---
 layout: page
 ---
-<style>
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 30px;
-  text-align: center;
-}
-
-.flex-item {
-  background-color: #f1f1f1;
-  padding: 10px;
-  flex: 25%;
-}
-
-@media (max-width: 800px) {
-  .flex-item {
-    flex: 50%;
-  }
-}
-@media (max-width: 600px) {
-  .flex-item {
-    flex: 100%;
-  }
-}
-</style>
 <article>
 {% if page.image %} 
 <img alt="Free {{ page.title }} 3D Model" style="width: 100%; border-radius: 6px;" title="Free {{ page.title }} 3D Model" src="{{ page.image }}">
@@ -109,14 +84,16 @@ HDRI <i style="color: #6c757d;">{{page.environment}}</i> {{page.hdri}}<br />
 
     {% if sameTagCount >= minCommonTags %}
 
-<div class="flex-container">
-  <div class="flex-item"  style="border-radius: 5px; box-shadow:0 1px 2px 0 #999;text-align:center;">
-  <a href="https://cg3d.org{url}" title="{title}">
-  <img style="border-radius: 5px 5px 0 0; width: 100%;" src="https://cg3d.org/assets/images{url}.jpg">
-  <h6 style="padding:0px 10px 10px 10px;">{title}</h6>
-  </a>
+  <div class="column">
+    <div class="card" style="border-radius: 5px; box-shadow:0 1px 2px 0 #999;text-align:center;">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+              <div class="rel">
+                <img style="border-radius: 5px 5px 0 0; width: 100%;" alt="Free {{ page.title }} 3D Model" width="100%" title="Free {{ page.title }} 3D Model" src="{{post.image}}">
+                <h3>{{ post.title }}</h3>
+              </div>
+          </a>
+    </div>
   </div>
-</div>
 
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
@@ -124,5 +101,5 @@ HDRI <i style="color: #6c757d;">{{page.environment}}</i> {{page.hdri}}<br />
       {% endif %}
     {% endif %}
   {% endfor %}
-<div class="flex-container"></div>
+<div class="row"></div>
 </article>
