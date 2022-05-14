@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Categories
 ---
 {% for models in site.categories %}
@@ -7,9 +7,9 @@ title: Categories
 <div class="row">
 {% for post in models[1] %}
   <div class="column">
-    <div class="card">
+    <div class="card" style="border-radius: 5px; box-shadow:0 1px 2px 0 #999;text-align:center;">
     <a href="{{site.baseurl}}{{post.url}}">
-    <img alt="Free 3D {{ post.title }}" title="Free 3D {{ post.title }}" src="{{post.image}}">
+    <img style="border-radius: 5px 5px 0 0; width: 100%;" alt="Free 3D {{ post.title }}" title="Free 3D {{ post.title }}" src="{{post.image}}">
     <h3>{{ post.title }}</h3>
     </a>
     </div>
