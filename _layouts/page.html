@@ -20,10 +20,10 @@
     <a class="bar-item button" onclick="document.getElementById('searchModal').style.display='block'">Search</a>
   </div>
 </div>
-
+<div class="page-container">
 <h2>{{page.title}}</h2>
 {{ content }}
-
+</div>
 <div id="searchModal" class="modal"><div class="modal-content animate-top card-4"><header class="container bg-color center padding-32"><span onclick="document.getElementById('searchModal').style.display='none'" class="button bg-color xlarge display-topright">×</span> <h2 class="wide"><i class="fa fa-search margin-right"></i>Search</h2></header><div class="container"><div id="search-container"><input type="text" id="search-input" placeholder="Search..."></div><div class="column"><div id="results-container" class="page-card"></div></div></div></div></div>
 
 <footer style="text-align: center; padding: 16px;color: #666;">
