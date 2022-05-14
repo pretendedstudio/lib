@@ -68,7 +68,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .main,#main{transition:margin-left .4s}
 .modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 .modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
-.bar{color:#fff;width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
+.bar{color:#000;width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
 .bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
 .bar .dropdown-hover,.bar .dropdown-click{position:static;float:left}
 .bar .button{white-space:normal}
@@ -105,7 +105,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
 .display-topleft{position:absolute;left:0;top:0}.display-topright{position:absolute;right:0;top:0}
 .display-bottomleft{position:absolute;left:0;bottom:0}.display-bottomright{position:absolute;right:0;bottom:0}
-.display-middle{position:absolute;top:50%;left:50%;text-align:center;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
 .display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
 .display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
@@ -249,11 +249,11 @@ a:hover {text-decoration: none;}
 .parallax [class*="bg__"] {position: relative; height: 300px; text-indent: -9999px; background-attachment: fixed; background-position: top center; background-size: cover;}
 .parallax [class*="bg__"]:nth-child(2n) {box-shadow: inset 0 0 1em #111;}
 .parallax .bg__foo, .parallax .bg__bazz {height: 100vh;}
-.parallax .bg__foo {background-image: url(https://mohamadrido.com/assets/images/instruments.jpg);}
-.parallax .bg__bar {background-image: url(https://mohamadrido.com/assets/images/instruments-wireframe.jpg);}
-.parallax .bg__baz {background-image: url(https://mohamadrido.com/assets/images/instruments-solid.jpg);}
-.parallax .bg__bazz {background-image: url(https://mohamadrido.com/assets/images/instruments.jpg);}
-.parallax .bg__break {box-shadow: inset 0 0 1em #111; background-image: url(https://mohamadrido.com/assets/images/instruments.jpg);}
+.parallax .bg__foo {background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg);}
+.parallax .bg__bar {background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax2.jpg);}
+.parallax .bg__baz {background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax3.jpg);}
+.parallax .bg__bazz {background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg);}
+.parallax .bg__break {box-shadow: inset 0 0 1em #111; background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg);}
 .parallax .capture {float: right; width: 200px; padding: 1em; margin: -1.5em 1em 0 0; text-indent: 0; background: rgba(243, 243, 243, 0.75); color:rgb(20,20,20);}
 /* Scrollbar Chrome */
 html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
@@ -281,7 +281,7 @@ html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
 .page-row:after {content: ""; display: table; clear: both;}
 /* Style the counter cards */
 .page-card {padding: 10px 15px; text-align: left; background-color: transparent; color: #333;}
-.image {border-radius: 6px; width: 100%;}
+img {border-radius: 5px; width: 100%;}
 /* Responsive columns */
 @media screen and (max-width: 900px) {.page-column {width: 50%; display: block;}}
 @media screen and (max-width: 600px) {.page-row {margin: 0 auto;} .page-column {width: 100%; display: block;}}
