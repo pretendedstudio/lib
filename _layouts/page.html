@@ -19,53 +19,21 @@
 <link rel="stylesheet" href="/assets/bootstrap.min.css">
 </head>
 <body>
-<!-- Navbar (sit on top) -->
-<div class="top">
-  <div class="bar" id="myNavbar">
-    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="https://cg3d.org" class="bar-item button"><b>CG 3D</b></a>
-    <a href="/license" class="bar-item button hide-small">License</a>
-    <a href="/support" class="bar-item button hide-small">Support</a>
-    <a class="bar-item button hide-small right hover-red" onclick="document.getElementById('searchModal').style.display='block'">
-      <i class="fa fa-search"></i>
-    </a>
+<header class="topnav" id="myTopnav">
+  <a href="https://pretendedstudio.com" class="active"><img src="/assets/img/pretended-studio.png" width="14px"/> {{site.name}}<!--b style="font-size: 10px; color: #fff; background: #666; border-radius: 3px;padding: 1px 2px;">v1.2</b--></a>
+  <div class="header-right">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="/categories">Categories</a>
+  <a href="/license">License</a>
+  <a href="/support">Support</a>
   </div>
-  <!-- Navbar on small screens -->
-  <div id="navBar" class="bar-block white hide hide-large hide-medium">
-    <a href="/license" class="bar-item button" onclick="toggleFunction()">License</a>
-    <a href="/support" class="bar-item button" onclick="toggleFunction()">Support</a>
-    <a class="bar-item button" onclick="document.getElementById('searchModal').style.display='block'">Search</a>
-  </div>
-</div>
-<div class="page-container">
+</header>
+  <p></p>
+
 {{ content }}
-</div>
-  <!-- Search Modal -->
-  <div id="searchModal" class="modal">
-    <div class="modal-content animate-top card-4">
-      <header class="container bg-color center padding-32"> 
-        <span onclick="document.getElementById('searchModal').style.display='none'" 
-       class="button bg-color xlarge display-topright">×</span>
-        <h2 class="wide"><i class="fa fa-search margin-right"></i>Search</h2>
-      </header>
-      <div class="container">
-        <div id="search-container">
-        <input type="text" id="search-input" placeholder="Search...">
-        </div>
-        <div class="column">
-        <div id="results-container" class="page-card">
-        <!-- Search results here -->
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- End Page Content -->
-<script src="/assets/slideshow.js"></script>
-<script src="/assets/navbar.js"></script>
-<script src="/assets/search.min.js"></script>
+
 <footer style="text-align: center; padding: 16px;color: #666;">
 <!-- Footer credit -->
 <i class="fab fa-creative-commons-zero"></i> 2018 - <span id="pdm" style="color: #666;"></span> &middot; <a style="color: #666;" href="https://cg3d.org">CG 3D</a> by <a style="color: #666;" href="https://pretendedstudio.com">Pretended Studio</a>
@@ -73,18 +41,7 @@
 document.getElementById("pdm").innerHTML = new Date().getFullYear();
 </script>
 </footer>
-<script>
-   window.simpleJekyllSearch = new SimpleJekyllSearch({
-     searchInput: document.getElementById('search-input'),
-     resultsContainer: document.getElementById('results-container'),
-     json: 'https://cg3d.org/search.json',
-     searchResultTemplate: '<div class="card" style="border-radius: 5px; box-shadow:0 1px 2px 0 #999;text-align:center;"><a href="https://cg3d.org{url}" title="{title}"><img style="border-radius: 5px 5px 0 0; width: 100%;" src="https://cg3d.org/assets/images{url}.jpg"><h6 style="padding:0px 10px 10px 10px;">{title}</h6></a></div>',
-     noResultsText: 'No results found',
-     limit: 10,
-     fuzzy: false,
-     exclude: ['Welcome']
-      })
-</script>
+<script src="/assets/topnav.js"></script>
 <!-- Scroll to Top -->
 <style>
 #myBtn {  display: none;  position: fixed;  bottom: 4.5em;  right: 1.5em;  z-index: 99;  font-size: 18px;  border: none;  outline: none;  background-color: #008eff;  color: white;  cursor: pointer;  padding: 0px 4px 0px 4px;  border-radius: 100%;} #myBtn:hover {  background-color: #0079de;}
