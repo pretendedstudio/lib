@@ -1,3 +1,9 @@
+@charset "UTF-8";/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 /* Top navbar toggle dropdown */
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
@@ -259,7 +265,7 @@ html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
 ::-webkit-scrollbar-corner {background: red;}
 ::-webkit-scrollbar-track-piece {background: #f1f1f1;}
 /* Full height image header */
-.bgimg-1 {background-position: center; background-size: cover; background-image: url("https://mohamadrido.com/assets/images/bg.jpg"); min-height: 100%;}
+.bgimg-1 {background-position: center; background-size: cover; background-image: url("https://cg3d.org/assets/baloon-cloud.jpg"); min-height: 100%;}
 .bg-color {background-color: transparent; color: #333;}
 .bg-color1 {background-color: #009688; color: #fff;}
 .bg-color2 {background-color: #f44336; color: #fff;}
@@ -279,3 +285,7 @@ html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
 /* Responsive columns */
 @media screen and (max-width: 900px) {.page-column {width: 50%; display: block;}}
 @media screen and (max-width: 600px) {.page-row {margin: 0 auto;} .page-column {width: 100%; display: block;}}
+.outline {border: 2px solid #fff;padding: 25px 10px 25px 10px;}
+.inline {background:linear-gradient(to right,deepskyblue 0%,pink 95%,orange 500%);color:#fff;padding:15px;}
+.note {color:#fff;font-size:10px;text-decoration:none;}
+.note a:hover {text-decoration:underline;}
