@@ -54,12 +54,12 @@
     <a class="bar-item button" onclick="document.getElementById('searchModal').style.display='block'">Search</a>
   </div>
 </div>
-<div class="container">
+<div class="page-container">
 <article>
 {% if page.image %} 
 <img alt="{{ page.title }}" title="{{ page.title }}" style="width: 100%; border-radius: 5px;" src="{{ page.image }}">
 {% endif %}
-<div class="container">
+<div class="page-container">
 <h2>{{page.title}}</h2>
 {% unless page.metadate == "hide" %} 
 {{ page.date | date: '%B %d, %Y' }} 
