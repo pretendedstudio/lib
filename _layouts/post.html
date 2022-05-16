@@ -54,11 +54,12 @@
     <a class="bar-item button" onclick="document.getElementById('searchModal').style.display='block'">Search</a>
   </div>
 </div>
-
+<div class="container">
 <article>
 {% if page.image %} 
 <img alt="Free 3D {{ page.title }} Models" style="width: 100%; border-radius: 6px;" title="Free 3D {{ page.title }} Models" src="{{ page.image }}">
 {% endif %}
+<div class="container">
 <h2>{{page.title}}</h2>
 {% unless page.metadate == "hide" %} 
 {{ page.date | date: '%B %d, %Y' }} 
@@ -67,7 +68,7 @@
 , by {{page.author | capitalize}} 
 {% endif %}
 {{ content }}
-
+</div>
 <!-- Table post -->
 <div class="post-columns" style="border: none; font-size: 14px;">
 <span style="color: #6c757d;">Name:</span> {{page.object}}<br />
@@ -153,7 +154,7 @@ HDRI <i style="color: #6c757d;">{{page.environment}}</i> {{page.hdri}}<br />
     {% endif %}
   {% endfor %}
 </article>
-
+</div>
     <!-- Search Modal -->
   <div id="searchModal" class="modal">
     <div class="modal-content animate-top card-4">
