@@ -2,18 +2,20 @@
 layout: page
 title: Categories
 ---
+<div class="page-container">
 {% for models in site.categories %}
-<h2>{{models[0] | capitalize}}</h2>
-<div class="row">
+<h6>{{models[0] | capitalize}}</h6>
+<div class="page-row">
 {% for post in models[1] %}
-  <div class="column">
-    <div class="card" style="border-radius: 5px; box-shadow:0 1px 2px 0 #999;text-align:center;">
-    <a href="{{site.baseurl}}{{post.url}}">
-    <img style="border-radius: 5px 5px 0 0; width: 100%;" alt="Free 3D {{ post.title }}" title="Free 3D {{ post.title }}" src="{{post.image}}">
-    <h3>{{ post.title }}</h3>
+  <div class="page-column" style="border-color: none;">
+    <div class="page-card" style="border-color: #fff;">
+    <a alt="{{ post.title }}" title="{{ post.title }}" style="text-decoration: none;" href="{{site.baseurl}}{{post.url}}">
+    <img alt="{{ post.title }}" title="{{ post.title }}" src="{{post.image}}">
+    <h3 style="font-size: 1rem; font-weight: 400; color: #333;">{{ post.title }}</h3>
     </a>
     </div>
   </div>
 {% endfor %}
 </div>
 {% endfor %}
+</div>
