@@ -1,8 +1,12 @@
 ---
 layout: page
 ---
-<h6><i class="fa-solid fa-tag"> </i>{{ page.tag }} 3d models</h6>
-
+  <div id="myDIV" class="bg-mc">
+    <a href="/models" class="bar-item button">Latest Upload</a>
+    <a href="/categories" class="bar-item a-mc">Categories</a>
+    <a href="/tags" class="bar-item button">Tags</a>
+  </div>
+<h6>{{ page.tag }} 3d models</h6>
 {% unless page.content == '' %}
   {{ page.content }}
 {% endunless %}
