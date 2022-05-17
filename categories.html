@@ -3,10 +3,10 @@ layout: page
 title: Categories
 ---
 <div class="page-container">
-  <div id="myDIV" style="text-align:center;">Show Models by: 
-  <button class="mc"><a href="/models">Latest Upload</a></button>
-  <button class="mc a-mc"><a href="/categories">Categories</a></button>
-  <button class="mc"><a href="/tags">Tags</a></button>
+  <div id="myDIV" class="bg-mc">
+    <a href="/models" class="bar-item button">Latest Upload</a>
+    <a href="/categories" class="bar-item a-mc">Categories</a>
+    <a href="/tags" class="bar-item button">Tags</a>
   </div>
 {% for models in site.categories %}
 <h6>{{models[0] | capitalize}}</h6>
