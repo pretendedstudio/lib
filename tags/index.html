@@ -64,7 +64,7 @@ title: Tags
   {% for tag in tags %}
   {% assign number = site.tags[tag].size %}
   {% assign slug = tag | downcase | replace: ' ', '_' %}
-  <span class="{% if number == 1 %}small{% elsif number <= 5 %}medium{% elsif number <= 10 %}large{% else %}huge{% endif %}">
+  <span class="{% if number == 1 %}small{% elsif number <= 5 %}medium{% elsif number <= 10 %}large{% else %}huge{% endif %} hover-text-teal">
     <a href="{{ slug }}">{{ tag | downcase }}</a>
   </span>
   {% endfor %}
