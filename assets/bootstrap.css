@@ -304,8 +304,7 @@ img {border-radius: 5px; width: 100%;}
   background: deepskyblue;
   color:#fff;
   text-decoration:none;
-  text-align:center;
-  float:left;width:auto;border:none;display:block;outline:0
+  text-align:left;
 }
 .mc {
   border: none;
@@ -313,14 +312,9 @@ img {border-radius: 5px; width: 100%;}
   padding: 10px 16px;
   background-color: deepskyblue;
   cursor: pointer;
-  padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0
-}
-a {
-  text-decoration:none;
 }
 .a-mc, .mc:hover {
   background-color: #ccc;
   color: white;
   text-decoration:none;
-  padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0
 }
