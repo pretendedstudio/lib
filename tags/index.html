@@ -22,7 +22,7 @@ title: Tags
 {% assign tags_list = site.tags %}
   {% if tags.first[0] == null %}
     {% for tag in tags_list %}
-      <li><a href="{{ tag }}">{{ tag | capitalize }} ({{ site.tags[tag].size }})</a></li>
+      <li><a href="{{ category }}">{{ tag | capitalize }} ({{ site.tags[tag].size }})</a></li>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %}
