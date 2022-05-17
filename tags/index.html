@@ -20,7 +20,7 @@ title: Tags
 <br/>
 
 <h2>Tags</h2>
-<ul>
+<ol>
 {% assign categories_list = site.tags %}
   {% if categories_list.first[0] == null %}
     {% for category in categories_list %}
@@ -32,8 +32,10 @@ title: Tags
     {% endfor %}
   {% endif %}
 {% assign categories_list = nil %}
-</ul>
+</ol>
+
 <br/>
+
 {% for tag in sorted_tags[:10] %}
   <li style="font-size:{{ tag.count }}px;">{{ tag.name }}</li>
 {% endfor %}
@@ -49,7 +51,7 @@ title: Tags
   {% endfor %}
 </ol>
 
-<br/>
+<br/> 
 
 {% capture tagString %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
 {% assign tags = tagString | split: '|' | sort: 'downcase' %}
