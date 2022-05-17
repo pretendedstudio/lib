@@ -300,6 +300,11 @@ img {border-radius: 5px; width: 100%;}
   color: #333;
   text-decoration: underline;
 }
+.bg-mc {
+  background: #999;
+  color:#fff;
+  text-decoration:none
+}
 .mc {
   border: none;
   outline: none;
@@ -309,6 +314,7 @@ img {border-radius: 5px; width: 100%;}
 }
 
 .a-mc, .mc:hover {
-  background-color: #999;
+  background-color: #ccc;
   color: white;
+  text-decoration:none;
 }
