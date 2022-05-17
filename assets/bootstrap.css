@@ -280,7 +280,7 @@ html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
 /* Clear floats after the columns */
 .page-row:after {content: ""; display: table; clear: both;}
 /* Style the counter cards */
-.page-card {padding: 10px 15px; text-align: left; background-color: transparent; color: #333;}
+.page-card {padding: 10px 15px; text-align: center; background-color: transparent; color: #333;}
 img {border-radius: 5px; width: 100%;}
 /* Responsive columns */
 @media screen and (max-width: 900px) {.page-column {width: 50%; display: block;}}
