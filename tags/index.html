@@ -45,7 +45,7 @@ title: Tags
   {% for count_with_tag in counts_with_tags %}
     {% assign tag = count_with_tag | split:":" | last %}
     {% assign count = site.tags[tag] | size %}
-    <li><a href="/blog/tags/{{ tag | slugify }}">{{ tag }} ({{ count }})</a></li>
+    <li><a href="{{ tag | slugify }}">{{ tag }} ({{ count }})</a></li>
   {% endfor %}
 </ol>
 
@@ -58,7 +58,7 @@ title: Tags
   {% assign number = site.tags[tag].size %}
   {% assign slug = tag | downcase | replace: ' ', '_' %}
   <span class="{% if number == 1 %}small{% elsif number <= 5 %}medium{% elsif number <= 10 %}large{% else %}huge{% endif %}">
-    <a href="#tag-{{ slug }}">{{ tag | downcase }}</a>
+    <a href="{{ slug }}">{{ tag | downcase }}</a>
   </span>
   {% endfor %}
 </div>
