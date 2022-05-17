@@ -3,7 +3,7 @@ layout: page
 title: Models
 ---
 <div class="page-row">
-{% for post in site.posts limit:15 %}
+{% for post in site.posts %}
   <div class="page-column" style="border-color: none;">
     <div class="page-card" style="border-color: #fff;">
       <a style="text-decoration: none; " href="{{site.baseurl}}{{post.url}}">
