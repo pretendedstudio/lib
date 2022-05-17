@@ -3,9 +3,9 @@ layout: page
 title: Tags
 ---
   <div id="myDIV" class="bg-mc">
-    <a href="/models" class="bar-item a-mc">Latest Upload</a>
+    <a href="/models" class="bar-item button">Latest Upload</a>
     <a href="/categories" class="bar-item button">Categories</a>
-    <a href="/tags" class="bar-item button">Tags</a>
+    <a href="/tags" class="bar-item a-mc">Tags</a>
   </div>
 <!--h2>Categories</h2>
 <ul>
@@ -65,7 +65,7 @@ title: Tags
   {% assign number = site.tags[tag].size %}
   {% assign slug = tag | downcase | replace: ' ', '_' %}
   <span class="{% if number == 1 %}small{% elsif number <= 5 %}medium{% elsif number <= 10 %}large{% else %}huge{% endif %}">
-    <a href="{{ slug }}">{{ tag | downcase }} ({{ category[1].size }})</a>
+    <a href="{{ slug }}">{{ tag | downcase }} ({{ site.tags[category].size }})</a>
   </span>
   {% endfor %}
 </div>
