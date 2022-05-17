@@ -300,3 +300,15 @@ img {border-radius: 5px; width: 100%;}
   color: #333;
   text-decoration: underline;
 }
+.mc {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.a-mc, .mc:hover {
+  background-color: #999;
+  color: white;
+}
