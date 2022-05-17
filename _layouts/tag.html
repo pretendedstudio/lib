@@ -3,29 +3,21 @@ layout: page
 ---
 <h3>Models tagged with: {{ page.tag }}</h3>
 
-<hr>
-
 {% unless page.content == '' %}
-  <p>{{ page.content }}</p>
+  {{ page.content }}
 {% endunless %}
 
 {% unless site.tags[page.tag] | size > 0 %}
-  <p>No posts found.</p>
+  No posts found.
 {% endunless %}
 
 {% for post in site.tags[page.tag] %}
-  <div>
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2>            
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3>
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
+  <div class="page-column" style="border-color: none;">
+    <div class="page-card" style="border-color: #fff;">
+    <a alt="{{ post.title }}" title="{{ post.title }}" style="text-decoration: none;" href="{{site.baseurl}}{{post.url}}">
+    <img alt="{{ post.title }}" title="{{ post.title }}" src="{{post.image}}">
+    <h3 style="font-size: 1rem; font-weight: 400; color: #333;">{{ post.title }}</h3>
     </a>
-
-</div>
-<hr>
+    </div>
+  </div>
 {% endfor %}
