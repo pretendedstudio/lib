@@ -301,20 +301,15 @@ img {border-radius: 5px; width: 100%;}
   text-decoration: underline;
 }
 .bg-mc {
-  background: #999;
-  color:#fff;
-  text-decoration:none
+  background: deepskyblue;
+  color:#333;
+  text-decoration:none;
+  text-align:center;
+  float:left;width:auto;border:none;display:block;outline:0;
 }
-.mc {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
 .a-mc, .mc:hover {
   background-color: #ccc;
-  color: white;
+  color: #333;
   text-decoration:none;
+  padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0;
 }
