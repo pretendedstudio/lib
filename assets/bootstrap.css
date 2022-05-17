@@ -300,21 +300,5 @@ img {border-radius: 5px; width: 100%;}
   color: #333;
   text-decoration: underline;
 }
-.bg-mc {
-  background: deepskyblue;
-  color:#fff;
-  text-decoration:none;
-  text-align:left;
-}
-.mc {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: deepskyblue;
-  cursor: pointer;
-}
-.a-mc, .mc:hover {
-  background-color: #ccc;
-  color: white;
-  text-decoration:none;
-}
+.bg-mc { background: #999; color:#f1f1f1; text-decoration:none; text-align:left; display:block; float:none;}
+.a-mc { background-color: #ccc; color: #f1f1f1; text-decoration:none; padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0;}
