@@ -17,6 +17,7 @@ title: Tags
 {% assign categories_list = nil %}
 </ul>
 <br/>
+
 <h2>Tags</h2>
 <ul>
 {% assign tags_list = site.tags %}
@@ -31,3 +32,52 @@ title: Tags
   {% endif %}
 {% assign tags_list = nil %}
 </ul>
+<br/>
+
+<h2>Tags 2</h2>
+<ul>
+{% assign categories_list = site.tags %}
+  {% if categories_list.first[0] == null %}
+    {% for category in categories_list %}
+      <li><a href="#{{ category }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a></li>
+    {% endfor %}
+  {% else %}
+    {% for category in categories_list %}
+      <li><a href="{{ category[0] }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
+    {% endfor %}
+  {% endif %}
+{% assign categories_list = nil %}
+</ul>
+<br/>
+{% for tag in sorted_tags[:10] %}
+  <li style="font-size:{{ tag.count }}px;">{{ tag.name }}</li>
+{% endfor %}
+<br/>
+{% capture counts_with_tags_string %}{% for tag in site.tags %}{{ tag[1] | size | prepend:"000000" | slice:-6,6 }}:{{ tag[0] }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign counts_with_tags = counts_with_tags_string | split:"," | sort | reverse %}
+
+<ol>
+  {% for count_with_tag in counts_with_tags %}
+    {% assign tag = count_with_tag | split:":" | last %}
+    {% assign count = site.tags[tag] | size %}
+    <li><a href="/blog/tags/{{ tag | slugify }}">{{ tag }} ({{ count }})</a></li>
+  {% endfor %}
+</ol>
+<br/>
+<h2>Posts by Tag</h2>
+
+<ul class="tags-list">
+  {{ site.tags | render_tags_list }}
+</ul>
+<br/>
+{% capture tagString %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags = tagString | split: '|' | sort: 'downcase' %}
+<div id="cloud">
+  {% for tag in tags %}
+  {% assign number = site.tags[tag].size %}
+  {% assign slug = tag | downcase | replace: ' ', '_' %}
+  <span class="{% if number == 1 %}small{% elsif number <= 5 %}medium{% elsif number <= 10 %}large{% else %}huge{% endif %}">
+    <a href="#tag-{{ slug }}">{{ tag | downcase }}</a>
+  </span>
+  {% endfor %}
+</div>
