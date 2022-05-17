@@ -1,0 +1,26 @@
+---
+layout: page
+---
+<h3>Models tagged with: {{ page.tag }}</h3>
+
+<hr>
+
+{% unless page.content == '' %}
+  <p>{{ page.content }}</p>
+{% endunless %}
+
+{% unless site.tags[page.tag] | size > 0 %}
+  <p>No posts found.</p>
+{% endunless %}
+
+{% for post in site.tags[page.tag] %}
+  <div class="page-column" style="border-color: none;">
+    <div class="page-card" style="border-color: #fff;">
+    <a alt="{{ post.title }}" title="{{ post.title }}" style="text-decoration: none;" href="{{ post.url | prepend: site.baseurl }}">
+    <img alt="{{ post.title }}" title="{{ post.title }}" src="{{post.image}}">
+    <h3 style="font-size: 1rem; font-weight: 400; color: #333;">{{ post.title }}</h3>
+    </a>
+    </div>
+  </div>
+<hr>
+{% endfor %}
