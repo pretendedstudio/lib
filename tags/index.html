@@ -11,7 +11,7 @@ title: Tags
     {% endfor %}
   {% else %}
     {% for category in categories_list %}
-      <li><a href="#{{ tag[0] }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
+      <li><a href="{{ tag[0] }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
     {% endfor %}
   {% endif %}
 {% assign categories_list = nil %}
@@ -26,7 +26,7 @@ title: Tags
     {% endfor %}
   {% else %}
     {% for tag in tags_list %}
-      <li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a></li>
+      <li><a href="{{ tag[0] }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a></li>
     {% endfor %}
   {% endif %}
 {% assign tags_list = nil %}
