@@ -8,7 +8,9 @@ title: Categories
     <a href="/categories" class="bar-item button" style="background-color:#ccc;">Categories</a>
     <a href="/tags" class="bar-item button">Tags</a>
   </div>
+</div>
 {% for models in site.categories %}
+<div class="page-container" style="padding:0px 15px;">
 <h6>{{models[0] | capitalize}}</h6>
 </div>
 <div class="page-row">
