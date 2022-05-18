@@ -1,13 +1,14 @@
 ---
 layout: page
 ---
-<div class="page-container">
+<div class="page-container" style="padding:22px 15px 0px; 15px;">
   <div class="bar bg-mc" id="myDIV" >
     <a href="/models" class="bar-item button">Latest Upload</a>
     <a href="/categories" class="bar-item button">Categories</a>
     <a href="/tags" class="bar-item button" style="background-color:#ccc;">Tags</a>
   </div>
 <h6>{{ page.tag }} 3d models</h6>
+</div>
 {% unless page.content == '' %}
   {{ page.content }}
 {% endunless %}
@@ -26,4 +27,3 @@ layout: page
     </div>
   </div>
 {% endfor %}
-</div>
