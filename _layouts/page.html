@@ -40,18 +40,18 @@
     <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="https://cg3d.org" class="bar-item button"><b>CG 3D</b></a>
-    <a href="/license" class="bar-item button hide-small">License</a>
-    <a href="/support" class="bar-item button hide-small">Support</a>
+    <a href="https://cg3d.org" class="bar-item button" alt="CG 3D" title="CG 3D"><b>CG 3D</b></a>
+    <a href="/license" class="bar-item button hide-small"> alt="License" title="License"License</a>
+    <a href="/support" class="bar-item button hide-small" alt="Support" title="Support">Support</a>
     <a class="bar-item button hide-small right hover-red" onclick="document.getElementById('searchModal').style.display='block'">
       <i class="fa fa-search"></i>
     </a>
   </div>
   <!-- Navbar on small screens -->
   <div id="navBar" class="bar-block white hide hide-large hide-medium">
-    <a href="/license" class="bar-item button" onclick="toggleFunction()">License</a>
-    <a href="/support" class="bar-item button" onclick="toggleFunction()">Support</a>
-    <a class="bar-item button" onclick="document.getElementById('searchModal').style.display='block'">Search</a>
+    <a href="/license" class="bar-item button" onclick="toggleFunction()" alt="License" title="License">License</a>
+    <a href="/support" class="bar-item button" onclick="toggleFunction()" alt="Support" title="Support">Support</a>
+    <a class="bar-item button" onclick="document.getElementById('searchModal').style.display='block'" alt="Search" title="Search">Search</a>
   </div>
 </div>
 {{ content }}
@@ -96,7 +96,7 @@ for (var i = 0; i < btns.length; i++) {
      searchInput: document.getElementById('search-input'),
      resultsContainer: document.getElementById('results-container'),
      json: 'https://cg3d.org/search.json',
-     searchResultTemplate: '<div class="card" style="border-radius: 5px; box-shadow:0 1px 2px 0 #999;text-align:center;"><a href="https://cg3d.org{url}" title="{title}"><img style="border-radius: 5px 5px 0 0; width: 100%;" src="https://cg3d.org/assets/images{url}.jpg"><h6 style="padding:0px 10px 10px 10px;">{title}</h6></a></div>',
+     searchResultTemplate: '<div class="card" style="border-radius: 5px; box-shadow:0 1px 2px 0 #999;text-align:center;"><a href="https://cg3d.org{url}" alt="Free 3D {title} Models" title="Free 3D {title} Models"><img style="border-radius: 5px 5px 0 0; width: 100%;" src="https://cg3d.org/assets/images{url}.jpg" alt="Free 3D {title} Models" title="Free 3D {title} Models"><h6 style="padding:0px 10px 10px 10px;">{title}</h6></a></div>',
      noResultsText: 'No results found',
      limit: 10,
      fuzzy: false,
