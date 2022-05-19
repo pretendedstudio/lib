@@ -96,7 +96,7 @@ for (var i = 0; i < btns.length; i++) {
      searchInput: document.getElementById('search-input'),
      resultsContainer: document.getElementById('results-container'),
      json: 'https://cg3d.org/search.json',
-     searchResultTemplate: '<a href="https://cg3d.org{url}" title="{title}"><img style="border-radius: 5px; width: 100%;" src="https://cg3d.org/assets/images{url}.jpg"><h6>{title}</h6></a>',
+     searchResultTemplate: '<div class="card" style="border-radius: 5px; box-shadow:0 1px 2px 0 #999;text-align:center;"><a href="https://cg3d.org{url}" title="{title}"><img style="border-radius: 5px 5px 0 0; width: 100%;" src="https://cg3d.org/assets/images{url}.jpg"><h6 style="padding:0px 10px 10px 10px;">{title}</h6></a></div>',
      noResultsText: 'No results found',
      limit: 10,
      fuzzy: false,
