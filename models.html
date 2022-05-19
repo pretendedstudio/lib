@@ -12,10 +12,10 @@ title: Models
 <div class="page-row">
 {% for post in site.posts %}
   <div class="page-column" style="border-color: none;">
-    <div class="page-card" style="border-color: #fff;">
+    <div class="card" style="border-radius: 5px; box-shadow:0 1px 2px 0 #999;text-align:center;">
       <a style="text-decoration: none; " href="{{site.baseurl}}{{post.url}}">
-      <img alt="{{ post.title }}" title="{{ post.title }}" style="width: 100%; border-radius: 5px;" src="{{post.image}}">
-      <h3 style="font-size: 1rem; font-weight: 400; color: #333;">{{ post.title }}</h3>
+      <img alt="{{ post.title }}" title="{{ post.title }}" style="width: 100%; border-radius: 5px 5px 0 0;" src="{{post.image}}">
+      <h3 style="font-size: 1rem; font-weight: 400; color: #333;padding:0px 10px 10px 10px;">{{ post.title }}</h3>
       </a>
     </div>
   </div>
