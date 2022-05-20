@@ -284,6 +284,10 @@ html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
 img {border-radius: 8px; width: 100%;}
 .img {width: 100%; border-radius: 8px;box-shadow:0 2px 3px rgba(0,0,0,0.06);}
 .img:hover {width: 100%; border-radius: 8px;box-shadow:0 4px 6px rgba(0,0,0,0.06);}
+/* Footer */
+footer {text-align: center; padding: 16px;color: #666;text-decoration:none;}
+footer a {color: #555;text-decoration:none;}
+footer a:hover {color: #444;text-decoration:underline;}
 /* Responsive columns */
 @media screen and (max-width: 900px) {.page-column {width: 50%; display: block;}}
 @media screen and (max-width: 600px) {.page-row {margin: 0 auto;} .page-column {width: 100%; display: block;}}
