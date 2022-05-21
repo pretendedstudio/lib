@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Models
+gallery-key: images
 ---
 <div class="page-container" style="padding:22px 15px 0px 15px;">
   <div class="bar bg-mc" id="myDIV" >
@@ -25,7 +26,7 @@ title: Models
 </div-->
 
 <br/>
-
+<h6>List 1</h6>
 {% for file in site.static_files %}
   {% assign pageurl = page.url | replace: 'index.html', '' %}
   {% if file.path contains pageurl %}
@@ -36,7 +37,7 @@ title: Models
 {% endfor %}
 
 <br/>
-
+<h6>List 2</h6>
 <ul class="something">
 {% for image in page.images %}
   <li class="something">
@@ -46,9 +47,18 @@ title: Models
 </ul>
 
 <br/>
-
+<h6>List 3</h6>
 {% for image in site.static_files %}
     {% if image.path contains 'assets/images' %}
         <img class="img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+{% endfor %}
+
+<br/>
+<h6>List 3</h6>
+{% capture gallery_path %}assets/images/{{ page.gallery-key }}{% endcapture %}
+{% for image in site.static_files %}
+    {% if image.path contains gallery_path %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
     {% endif %}
 {% endfor %}
