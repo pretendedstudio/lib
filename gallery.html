@@ -44,3 +44,11 @@ title: Models
   </li>
 {% endfor %}
 </ul>
+
+<br/>
+
+{% for image in site.static_files %}
+    {% if image.path contains 'assets/images' %}
+        <img class="img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+{% endfor %}
