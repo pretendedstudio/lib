@@ -10,15 +10,16 @@ gallery-key: images
     <a href="/tags" class="bar-item button" alt="Tags" title="Tags">Tags</a>
     <a href="/gallery" class="bar-item button" alt="Gallery" title="Gallery" style="background-color:deepskyblue;">Gallery</a>
   </div>
-</div>
+
 <div class="page-row">
 {% for image in site.static_files %}
   <div class="page-column" style="border-color: none;">
     <div class="page-card" style="border-color: #fff;">
     {% if image.path contains 'assets/images' %}
-        <img class="img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+        <img class="img" style="border-radius:none;" src="{{ site.baseurl }}{{ image.path }}" alt="Gallery" />
     {% endif %}
     </div>
   </div>
 {% endfor %}
+</div>
 </div>
