@@ -16,7 +16,7 @@ gallery-key: images
   <div class="page-column" style="border-color: none;">
     <div class="page-card" style="border-color: #fff;">
     {% if image.path contains 'assets/images' %}
-        <img class="img" style="border-radius:none;" src="{{ site.baseurl }}{{ image.path }}" alt="Gallery" />
+        <img class="img" style="border-radius:none;" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.title }}" title="{{ image.title }}" />
     {% endif %}
     </div>
   </div>
