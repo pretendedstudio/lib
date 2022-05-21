@@ -26,39 +26,14 @@ gallery-key: images
 </div-->
 
 <br/>
-<h6>List 1</h6>
-{% for file in site.static_files %}
-  {% assign pageurl = page.url | replace: 'index.html', '' %}
-  {% if file.path contains pageurl %}
-    {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
-    <img class="img" src="{{ file.path }}" />
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
-<br/>
-<h6>List 2</h6>
-<ul class="something">
-{% for image in page.images %}
-  <li class="something">
-    <a rel="something" class="something" href="/assets/images/{{ image }}" />
-  </li>
-{% endfor %}
-</ul>
-
-<br/>
-<h6>List 3</h6>
+<div class="page-row">
 {% for image in site.static_files %}
+  <div class="page-column" style="border-color: none;">
+    <div class="page-card" style="border-color: #fff;">
     {% if image.path contains 'assets/images' %}
         <img class="img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
     {% endif %}
+    </div>
+  </div>
 {% endfor %}
-
-<br/>
-<h6>List 3</h6>
-{% capture gallery_path %}assets/images/{{ page.gallery-key }}{% endcapture %}
-{% for image in site.static_files %}
-    {% if image.path contains gallery_path %}
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-    {% endif %}
-{% endfor %}
+  </div>
