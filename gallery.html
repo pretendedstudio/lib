@@ -10,7 +10,8 @@ title: Models
     <a href="/gallery" class="bar-item button" alt="Gallery" title="Gallery">Gallery</a>
   </div>
 </div>
-<div class="page-row">
+
+<!--div class="page-row">
 {% for post in site.posts %}
   <div class="page-column" style="border-color: none;">
     <div class="page-card" style="border-color: #fff;">
@@ -21,8 +22,10 @@ title: Models
     </div>
   </div>
 {% endfor %}
-</div>
+</div-->
+
 <br/>
+
 {% for file in site.static_files %}
   {% assign pageurl = page.url | replace: 'index.html', '' %}
   {% if file.path contains pageurl %}
@@ -31,7 +34,9 @@ title: Models
     {% endif %}
   {% endif %}
 {% endfor %}
+
 <br/>
+
 <ul class="something">
 {% for image in page.images %}
   <li class="something">
