@@ -1,0 +1,41 @@
+---
+layout: page
+title: Models
+---
+<div class="page-container" style="padding:22px 15px 0px 15px;">
+  <div class="bar bg-mc" id="myDIV" >
+    <a href="/models" class="bar-item button" style="background-color:deepskyblue;">Latest Upload</a>
+    <a href="/categories" class="bar-item button">Categories</a>
+    <a href="/tags" class="bar-item button">Tags</a>
+    <a href="/gallery" class="bar-item button" alt="Gallery" title="Gallery">Gallery</a>
+  </div>
+</div>
+<div class="page-row">
+{% for post in site.posts %}
+  <div class="page-column" style="border-color: none;">
+    <div class="page-card" style="border-color: #fff;">
+      <a alt="Free 3D {{ post.title }}" title="Free 3D {{ post.title }}" style="text-decoration: none; " href="{{site.baseurl}}{{post.url}}">
+      <img alt="Free 3D {{ post.title }}" title="Free 3D {{ post.title }}" class="img" src="{{post.image}}">
+      <h3 style="font-size: 1rem; font-weight: 400; color: #333;">{{ post.title }}</h3>
+      </a>
+    </div>
+  </div>
+{% endfor %}
+</div>
+<br/>
+{% for file in site.static_files %}
+  {% assign pageurl = page.url | replace: 'index.html', '' %}
+  {% if file.path contains pageurl %}
+    {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
+    <img class="img" src="{{ file.path }}" />
+    {% endif %}
+  {% endif %}
+{% endfor %}
+<br/>
+<ul class="something">
+{% for image in page.images %}
+  <li class="something">
+    <a rel="something" class="something" href="/assets/images/{{ image }}" />
+  </li>
+{% endfor %}
+</ul>
