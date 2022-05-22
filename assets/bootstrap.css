@@ -274,7 +274,7 @@ html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
 #search-container {max-width: 40em; padding: 1em; margin: 1em auto; border: 0px solid lightgrey;}
 #search-input {display: inline-block; padding: .5em; width: 100%; font-size: 0.8em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 /* Float four columns side by side */
-.page-column {float: left; width: 33.33%; border-radius: 0px; margin: 0 auto;}
+.page-column {float: left; width: 33.33333%; border-radius: 0px; margin: 0 auto;}
 /* Remove extra left and right margins, due to padding */
 .page-row {margin: 0 auto;}
 /* Clear floats after the columns */
