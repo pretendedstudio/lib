@@ -1,0 +1,18 @@
+---
+layout: page
+title: Library
+---
+<div class="container">
+<div class="page-row">
+{% for post in site.posts %}
+  <div class="page-column">
+    <div class="page-card">
+      <a href="{{site.baseurl}}{{post.url}}">
+      <img class="img" src="{{post.image}}">
+      <h3>{{ post.title }}</h3>
+      </a>
+    </div>
+  </div>
+{% endfor %}
+</div>
+</div>
