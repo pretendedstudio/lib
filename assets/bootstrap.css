@@ -299,4 +299,3 @@ footer a:hover {color: #444;text-decoration:underline;}
 .pcard {width: 100px;text-align:center;}
 .profile {border-radius:100%;box-shadow: 0 2px 3px rgba(0,0,0,0.06);width: 100%;}
 .profile:hover {box-shadow: 0 4px 6px rgba(0,0,0,0.06);}
-.gap {column-count: 3;text-align:center;}
