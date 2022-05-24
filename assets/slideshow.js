@@ -31,3 +31,35 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('xhdModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('fe74Modal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('gke280Modal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('regeraModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
