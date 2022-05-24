@@ -281,7 +281,7 @@ html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
 .page-row:after {content: ""; display: table; clear: both;}
 /* Style the counter cards */
 .page-card {padding: 10px 15px; text-align: center; background-color: transparent; color: #333;}
-img {border-radius: 8px; width: 100%;}
+img {width: 100%;}
 .img {width: 100%; border-radius: 8px;box-shadow:0 2px 3px rgba(0,0,0,0.06);}
 .img:hover {width: 100%; border-radius: 8px;box-shadow:0 4px 6px rgba(0,0,0,0.06);}
 /* Footer */
