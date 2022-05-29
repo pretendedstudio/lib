@@ -210,7 +210,7 @@ function hydro_coco_obj(){window.open('https://github.com/cc03d/archive/raw/main
 function hydro_coco_3ds(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-3ds.zip');}
 function hydro_coco_dae(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-dae.zip');}
 function hydro_coco_stl(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-stl.zip');}
-function schempp_hirth_duo_discus_xl_blend(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
+function schempp_hirth_duo_discus_xl_blend(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl.zip');}
 function schempp_hirth_duo_discus_xl_fbx(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-fbx.zip');}
 function schempp_hirth_duo_discus_xl_obj(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-obj.zip');}
 function schempp_hirth_duo_discus_xl_3ds(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-3ds.zip');}
