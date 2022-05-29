@@ -1,4 +1,4 @@
-/*! CC0 3D - Fee 3D Models & Public Domain Game Assets. | https://cc03d.com/license */
+/*! CG 3D - Fee 3D Models & Public Domain Game Assets. | https://cg3d.org/license */
 function bugatti_chiron_blend(){window.open('https://github.com/cc03d/archive/raw/main/bugatti-chiron.zip');}
 function bugatti_chiron_fbx(){window.open('https://github.com/cc03d/archive/raw/main/bugatti-chiron-fbx.zip');}
 function bugatti_chiron_obj(){window.open('https://github.com/cc03d/archive/raw/main/bugatti-chiron-obj.zip');}
