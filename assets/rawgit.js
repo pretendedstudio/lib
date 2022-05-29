@@ -210,12 +210,18 @@ function hydro_coco_obj(){window.open('https://github.com/cc03d/archive/raw/main
 function hydro_coco_3ds(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-3ds.zip');}
 function hydro_coco_dae(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-dae.zip');}
 function hydro_coco_stl(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-stl.zip');}
+function schempp_hirth_duo_discus_xl_blend(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
+function schempp_hirth_duo_discus_xl_fbx(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-fbx.zip');}
+function schempp_hirth_duo_discus_xl_obj(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-obj.zip');}
+function schempp_hirth_duo_discus_xl_3ds(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-3ds.zip');}
+function schempp_hirth_duo_discus_xl_dae(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-dae.zip');}
+function schempp_hirth_duo_discus_xl_stl(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-stl.zip');}
 function _blend(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
-function _fbx(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
-function _obj(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
-function _3ds(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
-function _dae(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
-function _stl(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
+function _fbx(){window.open('https://github.com/cc03d/archive/raw/main/-fbx.zip');}
+function _obj(){window.open('https://github.com/cc03d/archive/raw/main/-obj.zip');}
+function _3ds(){window.open('https://github.com/cc03d/archive/raw/main/-3ds.zip');}
+function _dae(){window.open('https://github.com/cc03d/archive/raw/main/-dae.zip');}
+function _stl(){window.open('https://github.com/cc03d/archive/raw/main/-stl.zip');}
 /*! Poly Haven | https://polyhaven.com/p/license.php */
 function hdri_license(){window.open('https://hdrihaven.com/p/license.php');}
 function lot02_hdri(){window.open('https://hdrihaven.com/hdri/?h=lot_02');}
