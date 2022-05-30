@@ -216,6 +216,12 @@ function schempp_hirth_duo_discus_xl_obj(){window.open('https://github.com/cc03d
 function schempp_hirth_duo_discus_xl_3ds(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-3ds.zip');}
 function schempp_hirth_duo_discus_xl_dae(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-dae.zip');}
 function schempp_hirth_duo_discus_xl_stl(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-duo-discus-xl-stl.zip');}
+function schempp_hirth_ventus_3g_blend(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-ventus-3g.zip');}
+function schempp_hirth_ventus_3g_fbx(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-ventus-3g-fbx.zip');}
+function schempp_hirth_ventus_3g_obj(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-ventus-3g-obj.zip');}
+function schempp_hirth_ventus_3g_3ds(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-ventus-3g-3ds.zip');}
+function schempp_hirth_ventus_3g_dae(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-ventus-3g-dae.zip');}
+function schempp_hirth_ventus_3g_stl(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-ventus-3g-stl.zip');}
 function _blend(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
 function _fbx(){window.open('https://github.com/cc03d/archive/raw/main/-fbx.zip');}
 function _obj(){window.open('https://github.com/cc03d/archive/raw/main/-obj.zip');}
