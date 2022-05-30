@@ -1,10 +1,10 @@
 ---
-title:  "Schempp Hirth Duo Discus XL 2007"
+title:  "Schempp Hirth Duo Discus XL"
 metadate: "hide"
 categories: [ Aircraft ]
 tags: [ sailplane ]
 image: "/assets/images/schempp-hirth-duo-discus-xl.jpg"
-object: "Schempp Hirth Duo Discus XL 2007 (Exterior Only)"
+object: "Schempp Hirth Duo Discus XL (Exterior Only)"
 geometry: "Subdivision-ready"
 vertices: "3,723"
 uvunwrapped: "Yes"
