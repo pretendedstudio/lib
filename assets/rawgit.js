@@ -228,6 +228,11 @@ function schempp_hirth_discus_2c_obj(){window.open('https://github.com/cc03d/arc
 function schempp_hirth_discus_2c_3ds(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-discus-2c-3ds.zip');}
 function schempp_hirth_discus_2c_dae(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-discus-2c-dae.zip');}
 function schempp_hirth_discus_2c_stl(){window.open('https://github.com/cc03d/archive/raw/main/schempp-hirth-discus-2c-stl.zip');}
+function koenigsegg_ccx_blend(){window.open('https://github.com/cc03d/archive/raw/main/koenigsegg-ccx.zip');}
+function koenigsegg_ccx_fbx(){window.open('https://github.com/cc03d/archive/raw/main/koenigsegg-ccx-fbx.zip');}
+function koenigsegg_ccx_obj(){window.open('https://github.com/cc03d/archive/raw/main/koenigsegg-ccx-obj.zip');}
+function koenigsegg_ccx_dae(){window.open('https://github.com/cc03d/archive/raw/main/koenigsegg-ccx-dae.zip');}
+function koenigsegg_ccx_stl(){window.open('https://github.com/cc03d/archive/raw/main/koenigsegg-ccx-stl.zip');}
 function _blend(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
 function _fbx(){window.open('https://github.com/cc03d/archive/raw/main/-fbx.zip');}
 function _obj(){window.open('https://github.com/cc03d/archive/raw/main/-obj.zip');}
