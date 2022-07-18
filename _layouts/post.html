@@ -56,10 +56,44 @@
 </div>
 <div class="page-container">
 <article>
+
+<script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{site.baseurl}}{{ page.image }}"
+  },
+  "headline": "{{page.title}}",
+  "description": "Free 3D {{page.title}} under Public Domain / CC0 License",
+  "datePublished": "2021-10-31T11:48:00+07:00",
+  "dateModified": "2021-10-31T06:51:53Z",
+  "image": {
+    "@type": "ImageObject","url": "{{site.baseurl}}{{ page.image }}",
+    "height": 1080,
+    "width": 1920
+    },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CG 3D | Free 3D Models for Download under Public Domain / CC0 License",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cg3d.org/assets/img/pretended-studio.png",
+      "width": 580,
+      "height": 580
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  }
+}
+</script>
+  
 <meta itemprop="license" content="https://creativecommons.org/licenses/publicdomain/">
 {% if page.image %} 
 <img alt="Free 3D {{ page.title }}" title="Free 3D {{ page.title }}" class="img" src="{{ page.image }}">
-<a rel="license" about="{{ page.image }}" style="font-size:0;" href="http://creativecommons.org/publicdomain/mark/1.0/">Public Domain</a>
+<a rel="license" about="{{site.baseurl}}{{ page.image }}" style="font-size:0;" href="http://creativecommons.org/publicdomain/mark/1.0/">Public Domain</a>
 {% endif %}
 <div class="page-container">
 <h2>{{page.title}}</h2>
