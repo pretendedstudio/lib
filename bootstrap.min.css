@@ -290,3 +290,4 @@ html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
 .note {color:#c1c1c1;font-size:10px;text-decoration:none;}
 .note a {color:#b1b1b1;font-size:10px;text-decoration:none;}
 .note a:hover {text-decoration:underline;}
+.hse:before{content:attr(title);display:inline;}
