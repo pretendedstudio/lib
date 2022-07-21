@@ -135,7 +135,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .greyscale-max,.grayscale-max,.hover-greyscale:hover,.hover-grayscale:hover{filter:grayscale(100%)}
 .greyscale,.grayscale{filter:grayscale(75%)}.greyscale-min,.grayscale-min{filter:grayscale(50%)}
 .sepia{filter:sepia(75%)}.sepia-max,.hover-sepia:hover{filter:sepia(100%)}.sepia-min{filter:sepia(50%)}
-.tiny{font-size:10px!important}.small{font-size:12px!important}.medium{font-size:15px!important}.large{font-size:18px!important}
+.tiny{font-size:10px!important}.small{font-size:12px!important}.medium{font-size:15px!important}.middle{font-size:16px!important}.large{font-size:18px!important}
 .xlarge{font-size:24px!important}.xxlarge{font-size:36px!important}.xxxlarge{font-size:48px!important}.jumbo{font-size:64px!important}
 .left-align{text-align:left!important}.right-align{text-align:right!important}.justify{text-align:justify!important}.center{text-align:center!important}
 .border-0{border:0!important}.border{border:1px solid #ccc!important}
@@ -291,3 +291,5 @@ html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
 .note a {color:#b1b1b1;font-size:10px;text-decoration:none;}
 .note a:hover {text-decoration:underline;}
 .bottom-left:before{content:attr(title);display:inline;}
+.middle-center:before{content:attr(title);display:inline;}
+.search-bar:before{content:attr(title);display:inline;}
