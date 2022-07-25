@@ -203,6 +203,7 @@ html {scrollbar-width: thin; scrollbar-color: #888 #333;}
 ::-webkit-scrollbar-corner {background: red;}
 ::-webkit-scrollbar-track-piece {background: #333;}
 .b-m:before{content:attr(title);display:inline;}
+.f-c:before{content:attr(title);display:inline;}
 </style>
 </head>
 <body>
@@ -220,7 +221,7 @@ html {scrollbar-width: thin; scrollbar-color: #888 #333;}
   <section>
     <div class="container">
     <h2>The Public Domain 3D Models</h2>
-      <p>Free 3d models for download under <a href="https://creativecommons.org/publicdomain/mark/1.0/">creative commons public domain mark</a> &amp; <a href="https://creativecommons.org/publicdomain/zero/1.0/">creative commons zero</a> / cc0 license.</p>
+      <p>Free 3d models for download under <a href="https://creativecommons.org/publicdomain/mark/1.0/">creative commons public domain mark</a> &amp; <a href="https://creativecommons.org/publicdomain/zero/1.0/">creative commons zero</a> / cc0 <a href="/license">license</a>.</p>
       <div id="button">
       <button class="button b-s"><h3><a href="https://cg3d.org/models"><span class="b-m" title="Browse Models"></span></a></h3></button>
       </div>
@@ -236,17 +237,14 @@ html {scrollbar-width: thin; scrollbar-color: #888 #333;}
   <section class="footer">
     <div class="container">
 <footer>
-<a href="/help">Help</a>
-<a href="/about">About</a>
-<a href="/tos">Terms</a>
-<a href="/privacy">Privacy</a>
-<a href="/disclaimer">Disclaimer</a>
+<a href="/help"><span class="f-c" title="Help"></span></a>
+<a href="/about"><span class="f-c" title="About"></span></a>
+<a href="/tos"><span class="f-c" title="Terms"></span></a>
+<a href="/privacy"><span class="f-c" title="Privacy"></span></a>
+<a href="/disclaimer"><span class="f-c" title="Disclaimer"></span></a>
 <br/>
 <!-- Footer credit -->
-<i class="fab fa-creative-commons-zero" title="Public Domain"></i> 2018 - <span id="pdm"></span> &middot; <a href="https://cg3d.org">CG 3D</a> Made by <a href="https://mohamadrido.com">Mohamad Rido</a>
-<script>
-document.getElementById("pdm").innerHTML = new Date().getFullYear();
-</script>
+<i class="fab fa-creative-commons-zero" title="Public Domain Mark"></i> <span class="f-c" title="2018 - 2022 &middot; "></span><a href="https://cg3d.org"><span class="f-c" title="CG 3D"></span></a> <span class="f-c" title="Made by"></span> <a href="https://mohamadrido.com"><span class="f-c" title="Mohamad Rido"></span></a>
 </footer>
     </div>
   </section>
