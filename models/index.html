@@ -1,0 +1,25 @@
+---
+layout: page
+title: Models
+---
+<div class="page-container" style="padding:22px 15px 0px 15px;">
+  <div class="bar bg-mc" id="myDIV" >
+    <a href="/models" class="bar-item button" alt="Models" title="Models" style="background-color:deepskyblue;">Latest Upload</a>
+    <a href="/categories" class="bar-item button" alt="Categories" title="Categories">Categories</a>
+    <a href="/tags" class="bar-item button" alt="Tags" title="Tags">Tags</a>
+    <a href="/gallery" class="bar-item button" alt="Gallery" title="Gallery">Gallery</a>
+  </div>
+</div>
+<div class="page-row">
+{% for post in site.posts %}
+  <div class="page-column" style="border-color: none;">
+    <div class="page-card" style="border-color: #fff;">
+      <meta itemprop="license" content="https://creativecommons.org/licenses/publicdomain/">
+      <a alt="Free 3D {{ post.title }}" title="Free 3D {{ post.title }}" style="text-decoration: none; " href="{{site.baseurl}}{{post.url}}">
+      <img alt="Free 3D {{ post.title }}" title="Free 3D {{ post.title }}" class="img" src="{{post.image}}">
+      <h3 style="font-size: 1rem; font-weight: 400; color: #333;">{{ post.title }}</h3>
+      </a>
+    </div>
+  </div>
+{% endfor %}
+</div>
