@@ -170,6 +170,10 @@ article .header {
 article h1, article h2 {
   margin: 0 0 0.333em;
 }
+article section.footer {
+  padding: 3em;
+  background:rgb(20,20,20);
+}
 article section {
   padding: 3em;
   background-position:center;
@@ -186,6 +190,9 @@ article section.parallax {
   width:100%;
   margin: 0;
 }
+footer {text-align: center;font-size:12px;padding: 16px;color: #666;text-decoration:none;}
+footer a {color: #555;text-decoration:none;}
+footer a:hover {color: #444;text-decoration:underline;}
 /* Scrollbar Chrome */
 html {scrollbar-width: thin; scrollbar-color: #888 #333;}
 /* Scrollbar Firefox */
@@ -223,6 +230,24 @@ html {scrollbar-width: thin; scrollbar-color: #888 #333;}
   <section class="parallax">
     <div class="bg__break">
       <div class="capture b-s">Available in <span style="color:#ff4d00;">.blend</span> <span style="color:#008b8b;">.3ds</span> <span style="color:#ff0000;">.obj</span> <span style="color:#be00be;">.fbx</span> <span style="color:#00acff;">.dae</span> &amp; <span style="color:#ff0066;">.stl</span> format files.</div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+<footer>
+<a href="/help">Help</a>
+<a href="/about">About</a>
+<a href="/tos">Terms</a>
+<a href="/privacy">Privacy</a>
+<a href="/disclaimer">Disclaimer</a>
+<br/>
+<!-- Footer credit -->
+<i class="fab fa-creative-commons-zero" title="Public Domain"></i> 2018 - <span id="pdm"></span> &middot; <a href="https://cg3d.org">CG 3D</a> Made by <a href="https://mohamadrido.com">Mohamad Rido</a>
+<script>
+document.getElementById("pdm").innerHTML = new Date().getFullYear();
+</script>
+</footer>
     </div>
   </section>
 
