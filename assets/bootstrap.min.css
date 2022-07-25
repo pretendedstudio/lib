@@ -1,0 +1,169 @@
+@charset "UTF-8";/*!
+ * CG 3D v1.0.2 (https://pretendedstudio.com/)
+ * Copyright 2018-2022 CG 3D Authors
+ * Copyright 2018-2022 Mohamad Rido
+ * Licensed under MIT (https://github.com/pretendedstudio/git/blob/main/LICENSE)
+ */
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+color: #fff;
+background:rgb(20,20,20);
+margin: 0;
+padding: 0;
+}
+h1,h2,h3,h4,h5,h6{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;font-weight:400;margin:10px 0}.wide{letter-spacing:4px}
+
+.parallax [class*="bg__"] {
+  position: relative;
+  height: 300px;
+  text-indent: -9999px;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+}
+.parallax [class*="bg__"]:nth-child(2n) {
+  box-shadow: inset 0 0 0.1em #999;
+}
+.parallax .bg__foo, .parallax .bg__bazz {
+  height: 100vh;
+}
+.parallax .bg__foo {background-image: url(https://cg3d.org/assets/baloon-cloud.jpg);}
+.parallax .bg__bar {background-image: url(https://mohamadrido.com/assets/images/instruments-wireframe.jpg);}
+.parallax .bg__baz {background-image: url(https://cg3d.org/assets/baloon-solid.jpg);}
+.parallax .bg__bazz {background-image: url(https://cg3d.org/assets/baloon-cloud.jpg);}
+.parallax .bg__break {box-shadow: inset 0 0 0.2em #111; background-image: url(https://cg3d.org/assets/baloon-cloud.jpg);}
+.parallax .capture {
+  float: right;
+  width: 200px;
+  padding: 1em;
+  margin: -1.5em 1em 0 0;
+  text-indent: 0;
+  background: rgba(243, 243, 243, 0.75);
+  color:rgb(20,20,20);
+}
+
+.b-s {
+  box-shadow: 0 2px 3px rgba(0,0,0,0.06);
+}
+.b-s:hover {
+  box-shadow:0 4px 6px rgba(0,0,0,0.06);
+}
+.l-k {
+  color:#008b8b;
+}
+
+.l-p a {
+  color:#008b8b;
+}
+
+.l-p a:hover {
+  color:#333;
+}
+
+.f-h {
+  font-size: 1.6em;
+}
+
+.f-p {
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration:none;
+  color:rgb(235,235,235);
+}
+a:hover {
+  color:#fff;
+}
+
+p a {
+  text-decoration:none;
+  color:#fff;
+}
+p a:hover {
+  color:#00bfff;
+}
+
+.title {
+  color: #333;
+}
+
+.title:hover {
+  color: #007c7c;
+}
+
+#button, #center {
+  text-align:center;
+}
+
+.button {
+text-align:center;color:#fff;background:linear-gradient(to right,#00bfff 0%,#00acff 45%,#008cff 200%);border:none;cursor:pointer;padding:5px 25px 5px 25px;
+}
+.button:hover {
+text-align:center;color:#fff;background:linear-gradient(to left,#ff9000 0%,#ff6801 45%,#ff4200 200%);border:none;cursor:pointer;padding:5px 25px 5px 25px;
+}
+
+article .container {
+  width: 100%;
+  margin: 0 auto;
+  max-width:1280px;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  width:100%;max-width:1280px;
+}
+article .page {
+  position: relative;
+  margin: -10em 0 0 0;
+  padding: 1em;
+  text-align: left;
+  color: #333;
+  background: rgba(255, 255, 255, 0.75);
+}
+article .header {
+  position: relative;
+  margin: -5em 0 0 0;
+  padding: 1em;
+  text-align: left;
+  font-size: 2em;
+  color: #333;
+  background: rgba(255, 255, 255, 0.75);
+}
+article h1, article h2 {
+  margin: 0 0 0.333em;
+}
+article section.footer {
+  padding: 3em;
+  background:rgb(20,20,20);
+}
+article section {
+  padding: 3em;
+  background-position:center;
+  background-size:cover;
+  background-image:url("https://mohamadrido.com/assets/images/instruments.jpg");
+  min-height:100%;
+}
+article section.parallax {
+  margin: 0;
+  padding: 0;
+}
+
+#frame {
+  width:100%;
+  margin: 0;
+}
+footer {text-align: center;font-size:12px;padding: 16px;color: #666;text-decoration:none;}
+footer a {color: #555;text-decoration:none;}
+footer a:hover {color: #444;text-decoration:underline;}
+/* Scrollbar Chrome */
+html {scrollbar-width: thin; scrollbar-color: #888 #333;}
+/* Scrollbar Firefox */
+::-webkit-scrollbar {width: 2px;height: 2px;}
+::-webkit-scrollbar-track {background: #333;}
+::-webkit-scrollbar-thumb {background: #888;border-radius: 12px; margin: 0px auto;}
+::-webkit-scrollbar-thumb:hover {background: #666;}
+::-webkit-scrollbar-corner {background: red;}
+::-webkit-scrollbar-track-piece {background: #333;}
+.b-m:before{content:attr(title);display:inline;}
+.f-c:before{content:attr(title);display:inline;}
