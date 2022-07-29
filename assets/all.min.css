@@ -4,14 +4,11 @@
  * Copyright 2018-2022 Mohamad Rido
  * Licensed under MIT (https://github.com/pretendedstudio/git/blob/main/LICENSE)
  */
-html, body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-color: #fff;
-background:rgb(20,20,20);
-margin: 0;
-padding: 0;
-}
-h1,h2,h3,h4,h5,h6{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;font-weight:400;margin:10px 0}.wide{letter-spacing:4px}
+html, body {height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-style:normal; font-size:12px; background-color: #f1f1f1;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-weight:300;}
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+h1,h2,h3,h4,h5,h6{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;font-weight:400;margin:10px 0;}.wide{letter-spacing:4px;}
 
 .parallax [class*="bg__"] {
   position: relative;
@@ -28,7 +25,7 @@ h1,h2,h3,h4,h5,h6{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ro
   height: 100vh;
 }
 .parallax .bg__foo {background-image: url(https://cg3d.org/assets/baloon-cloud.jpg);}
-.parallax .bg__bar {background-image: url(https://mohamadrido.com/assets/baloon-wireframe.jpg);}
+.parallax .bg__bar {background-image: url(https://mohamadrido.com/assets/images/instruments-wireframe.jpg);}
 .parallax .bg__baz {background-image: url(https://cg3d.org/assets/baloon-solid.jpg);}
 .parallax .bg__bazz {background-image: url(https://cg3d.org/assets/baloon-cloud.jpg);}
 .parallax .bg__break {box-shadow: inset 0 0 0.2em #111; background-image: url(https://cg3d.org/assets/baloon-cloud.jpg);}
@@ -41,7 +38,21 @@ h1,h2,h3,h4,h5,h6{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ro
   background: rgba(243, 243, 243, 0.75);
   color:rgb(20,20,20);
 }
+.button {
+color:rgb(235,235,235);background:linear-gradient(to right,#00bfff 0%,#00acff 45%,#008cff 200%);border:none;cursor:pointer;padding:5px 25px 5px 25px;
+}
+.button:hover {
+color:#fff!important;background:linear-gradient(to left,#ff9000 0%,#ff6801 45%,#ff4200 200%);border:none;cursor:pointer;padding:5px 25px 5px 25px;
+}
+#button, #center {
+  text-align:center;
+}
 
+.button{width:100%;text-align:center;padding:8px 16px}
+.button{white-space:normal}
+.padding-large{padding:12px 24px!important}
+.large{font-size:18px!important}
+.margin-top{margin-top:16px!important}.margin-bottom{margin-bottom:16px!important}
 .b-s {
   box-shadow: 0 2px 3px rgba(0,0,0,0.06);
 }
@@ -92,27 +103,12 @@ p a:hover {
   color: #007c7c;
 }
 
-#button, #center {
-  text-align:center;
-}
-
-.button {
-text-align:center;color:#fff;background:linear-gradient(to right,#00bfff 0%,#00acff 45%,#008cff 200%);border:none;cursor:pointer;padding:5px 25px 5px 25px;
-}
-.button:hover {
-text-align:center;color:#fff;background:linear-gradient(to left,#ff9000 0%,#ff6801 45%,#ff4200 200%);border:none;cursor:pointer;padding:5px 25px 5px 25px;
-}
-
 article .container {
   width: 100%;
   margin: 0 auto;
   max-width:1280px;
 }
-.container {
-  width: 100%;
-  margin: 0 auto;
-  width:100%;max-width:1280px;
-}
+
 article .page {
   position: relative;
   margin: -10em 0 0 0;
@@ -139,6 +135,8 @@ article section.footer {
 }
 article section {
   padding: 3em;
+  color:#fff;
+  font-size:1.25em;
 }
 article section.main {
   background-position:center;
@@ -158,14 +156,5 @@ article section.parallax {
 footer {text-align: center;font-size:12px;padding: 16px;color: #666;text-decoration:none;}
 footer a {color: #555;text-decoration:none;}
 footer a:hover {color: #444;text-decoration:underline;}
-/* Scrollbar Chrome */
-html {scrollbar-width: thin; scrollbar-color: #888 #333;}
-/* Scrollbar Firefox */
-::-webkit-scrollbar {width: 2px;height: 2px;}
-::-webkit-scrollbar-track {background: #333;}
-::-webkit-scrollbar-thumb {background: #888;border-radius: 12px; margin: 0px auto;}
-::-webkit-scrollbar-thumb:hover {background: #666;}
-::-webkit-scrollbar-corner {background: red;}
-::-webkit-scrollbar-track-piece {background: #333;}
 .b-m:before{content:attr(title);display:inline;}
 .f-c:before{content:attr(title);display:inline;}
