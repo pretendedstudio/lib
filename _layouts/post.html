@@ -8,7 +8,7 @@
 <meta name="hour-prompt" content="hours ago">
 <meta name="minute-prompt" content="minutes ago">
 <meta name="justnow-prompt" content="just now">
-<title>Free 3D {% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} Models - {% endif %}{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif %} {{ site.name | escape }}</title>
+<title>Free 3D {% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} Model - {% endif %}{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif %} {{ site.name | escape }}</title>
 <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
 <meta property="og:locale" content="en">
 <meta property="og:type" content="website">
@@ -69,7 +69,9 @@
   "image": {
     "@type": "ImageObject","url": "{{site.url}}{{ page.image }}",
     "height": 1080,
-    "width": 1920
+    "width": 1920,
+    "license": "https://creativecommons.org/licenses/publicdomain/",
+      "acquireLicensePage": "{{site.url}}/license"
     },
   "publisher": {
     "@type": "Organization",
@@ -78,7 +80,9 @@
       "@type": "ImageObject",
       "url": "https://cg3d.org/assets/img/pretended-studio.png",
       "width": 580,
-      "height": 580
+      "height": 580,
+      "license": "https://creativecommons.org/licenses/publicdomain/",
+      "acquireLicensePage": "{{site.url}}/license"
     }
   },
   "author": {
