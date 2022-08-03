@@ -8,7 +8,7 @@
 <meta name="hour-prompt" content="hours ago">
 <meta name="minute-prompt" content="minutes ago">
 <meta name="justnow-prompt" content="just now">
-<title>Free 3D {% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} Model - {% endif %}{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif %} {{ site.name | escape }}</title>
+<title>Free 3D {% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} - {% endif %}{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif %} {{ site.name | escape }}</title>
 <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
 <meta property="og:locale" content="en">
 <meta property="og:type" content="website">
@@ -64,7 +64,7 @@
     "@type": "WebPage",
     "@id": "{{site.url}}{{ page.image }}"
   },
-  "headline": "{{page.title}}",
+  "headline": "{{page.title}} 3D Model",
   "description": "Free 3D {{page.title}} Models under Public Domain / CC0 License",
   "image": {
     "@type": "ImageObject","url": "{{site.url}}{{ page.image }}",
@@ -75,7 +75,7 @@
     },
   "publisher": {
     "@type": "Organization",
-    "name": "CG 3D | Free 3D Models for Download under Public Domain / CC0 License",
+    "name": "CG 3D - The Public Domain 3D Models",
     "logo": {
       "@type": "ImageObject",
       "url": "https://cg3d.org/assets/img/pretended-studio.png",
@@ -98,7 +98,7 @@
 <a rel="license" about="{{site.baseurl}}{{ page.image }}" style="font-size:0;" href="http://creativecommons.org/publicdomain/mark/1.0/">Public Domain</a>
 {% endif %}
 <div class="page-container">
-<h2>{{page.title}}</h2>
+<h2 alt="Free 3D {{page.title}}" title="{{page.title}} 3D Model">{{page.title}} 3D Model</h2>
 {% unless page.metadate == "hide" %} 
 {{ page.date | date: '%B %d, %Y' }} 
 {% endunless %}
@@ -180,7 +180,7 @@ HDRI <i style="color: #6c757d;">{{page.environment}}</i> {{page.hdri}}<br />
     {% if sameTagCount >= minCommonTags %}
     <div class="page-column" style="border-color: none;">
     <div class="page-card" style="border-color: #fff;">
-    <a alt="Free 3D {{ post.title }}" title="Free 3D {{ post.title }}" style="text-decoration: none;" href="{{site.baseurl}}{{post.url}}">
+    <a alt="{{ post.title }} 3D Model" title="{{ post.title }} 3D Model" style="text-decoration: none;" href="{{site.baseurl}}{{post.url}}">
     <img alt="Free 3D {{ post.title }}" title="Free 3D {{ post.title }}" class="img" src="{{post.image}}">
     <h3 style="font-size: 1rem; font-weight: 400; color: #333;">{{ post.title }}</h3>
     </a>
