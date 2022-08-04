@@ -319,6 +319,7 @@ function schempp_hirth_discus_2c_gltf(){window.open('https://github.com/senireka
 function koenigsegg_ccx_blend(){window.open('https://github.com/senirekayasa/archive/raw/main/koenigsegg-ccx.zip');}
 function koenigsegg_ccx_fbx(){window.open('https://github.com/senirekayasa/archive/raw/main/koenigsegg-ccx-fbx.zip');}
 function koenigsegg_ccx_obj(){window.open('https://github.com/senirekayasa/archive/raw/main/koenigsegg-ccx-obj.zip');}
+function koenigsegg_ccx_3ds(){window.open('https://github.com/senirekayasa/archive/raw/main/koenigsegg-ccx-3ds.zip');}
 function koenigsegg_ccx_dae(){window.open('https://github.com/senirekayasa/archive/raw/main/koenigsegg-ccx-dae.zip');}
 function koenigsegg_ccx_stl(){window.open('https://github.com/senirekayasa/archive/raw/main/koenigsegg-ccx-stl.zip');}
 function koenigsegg_ccx_glb(){window.open('https://github.com/senirekayasa/archive/raw/main/koenigsegg-ccx-stl-glb.zip');}
