@@ -322,8 +322,8 @@ function koenigsegg_ccx_obj(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-o
 function koenigsegg_ccx_3ds(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-3ds.zip');}
 function koenigsegg_ccx_dae(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-dae.zip');}
 function koenigsegg_ccx_stl(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-stl.zip');}
-function koenigsegg_ccx_glb(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-stl-glb.zip');}
-function koenigsegg_ccx_gltf(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-stl-gltf.zip');}
+function koenigsegg_ccx_glb(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-glb.zip');}
+function koenigsegg_ccx_gltf(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-gltf.zip');}
 function _blend(){window.open('https://cdn.cg3d.org/.zip');}
 function _fbx(){window.open('https://cdn.cg3d.org/-fbx.zip');}
 function _obj(){window.open('https://cdn.cg3d.org/-obj.zip');}
