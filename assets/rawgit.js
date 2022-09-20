@@ -829,6 +829,6 @@ function _texture(){window.open('https://ambientcg.com/view?id=');}
 /*! CG 3D - The Public Domain 3D Models | https://cg3d.org/license */
 function apple_leaf_2d_texture(){window.open('https://cdn.cg3d.org/appleleaf2d.zip');}
 function pepsi_can_texture(){window.open('https://cdn.cg3d.org/pepsican.zip');}
-function _texture(){window.open('https://cdn.cg3d.org/coca-cola-texture-4k.zip');}
-function _texture(){window.open('https://cdn.cg3d.org/red-bull-texture-4k.zip');}
+function coca_cola_texture(){window.open('https://cdn.cg3d.org/coca-cola-texture-4k.zip');}
+function red_bull_texture(){window.open('https://cdn.cg3d.org/red-bull-texture-4k.zip');}
 function _texture(){window.open('https://cdn.cg3d.org/.zip');}
