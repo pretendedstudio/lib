@@ -324,6 +324,32 @@ function koenigsegg_ccx_dae(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-d
 function koenigsegg_ccx_stl(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-stl.zip');}
 function koenigsegg_ccx_glb(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-glb.zip');}
 function koenigsegg_ccx_gltf(){window.open('https://cdn.cg3d.org/koenigsegg-ccx-gltf.zip');}
+function coca_cola_blend(){window.open('https://cdn.cg3d.org/coca-cola.zip');}
+function coca_cola_fbx(){window.open('https://cdn.cg3d.org/coca-cola-fbx.zip');}
+function coca_cola_obj(){window.open('https://cdn.cg3d.org/coca-cola-obj.zip');}
+function coca_cola_3ds(){window.open('https://cdn.cg3d.org/coca-cola-3ds.zip');}
+function coca_cola_dae(){window.open('https://cdn.cg3d.org/coca-cola-dae.zip');}
+function coca_cola_stl(){window.open('https://cdn.cg3d.org/coca-cola-stl.zip');}
+function coca_cola_glb(){window.open('https://cdn.cg3d.org/coca-cola-glb.zip');}
+function coca_cola_gltf(){window.open('https://cdn.cg3d.org/coca-cola-gltf.zip');}
+function red_bull_blend(){window.open('https://cdn.cg3d.org/red-bull.zip');}
+function red_bull_fbx(){window.open('https://cdn.cg3d.org/red-bull-fbx.zip');}
+function red_bull_obj(){window.open('https://cdn.cg3d.org/red-bull-obj.zip');}
+function red_bull_3ds(){window.open('https://cdn.cg3d.org/red-bull-3ds.zip');}
+function red_bull_dae(){window.open('https://cdn.cg3d.org/red-bull-dae.zip');}
+function red_bull_stl(){window.open('https://cdn.cg3d.org/red-bull-stl.zip');}
+function red_bull_glb(){window.open('https://cdn.cg3d.org/red-bull-glb.zip');}
+function red_bull_gltf(){window.open('https://cdn.cg3d.org/red-bull-gltf.zip');}
+
+function _blend(){window.open('https://cdn.cg3d.org/.zip');}
+function _fbx(){window.open('https://cdn.cg3d.org/-fbx.zip');}
+function _obj(){window.open('https://cdn.cg3d.org/-obj.zip');}
+function _3ds(){window.open('https://cdn.cg3d.org/-3ds.zip');}
+function _dae(){window.open('https://cdn.cg3d.org/-dae.zip');}
+function _stl(){window.open('https://cdn.cg3d.org/-stl.zip');}
+function _glb(){window.open('https://cdn.cg3d.org/-glb.zip');}
+function _gltf(){window.open('https://cdn.cg3d.org/-gltf.zip');}
+
 function _blend(){window.open('https://cdn.cg3d.org/.zip');}
 function _fbx(){window.open('https://cdn.cg3d.org/-fbx.zip');}
 function _obj(){window.open('https://cdn.cg3d.org/-obj.zip');}
@@ -803,4 +829,6 @@ function _texture(){window.open('https://ambientcg.com/view?id=');}
 /*! CG 3D - The Public Domain 3D Models | https://cg3d.org/license */
 function apple_leaf_2d_texture(){window.open('https://cdn.cg3d.org/appleleaf2d.zip');}
 function pepsi_can_texture(){window.open('https://cdn.cg3d.org/pepsican.zip');}
+function _texture(){window.open('https://cdn.cg3d.org/coca-cola-texture-4k.zip');}
+function _texture(){window.open('https://cdn.cg3d.org/red-bull-texture-4k.zip');}
 function _texture(){window.open('https://cdn.cg3d.org/.zip');}
